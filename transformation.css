@@ -1,0 +1,70 @@
+/* @keyframes myanimation{
+    from{
+        left:80%
+    }
+    to{
+        left:0%;
+    }
+}
+main{
+    position: relative;
+    animation: myanimation 0.5s alternate; 
+} */
+@keyframes headertrans{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+@keyframes footertrans{
+    from{
+        bottom:-100%;
+    }
+    to{
+        bottom:0%
+    }
+}
+@keyframes lefttoright{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+@keyframes righttoleft{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0%;
+    }
+}
+@keyframes animation1{
+    from{
+        transform: translateX(100vh);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+header div{
+    position: relative;
+    animation: headertrans 3s ease-in;
+}
+footer>div{
+    position: relative;
+    animation: headertrans 3s ease-in;
+}
+
+.intro{
+    position: relative;
+    animation: lefttoright 3s ease-in;
+}
+
+.image{
+    position: relative;
+    animation: righttoleft 3s ease-in;
+}
